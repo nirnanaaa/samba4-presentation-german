@@ -90,7 +90,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 	background-image: url('../img/dotted-bg-transp.png');
-	background-image: url('../img/dotted-bg-transp.png'), linear-gradient(0deg, transparent 0%, rgba(0,0,0,.2) 50%, transparent 100%);
+	background-image: url('../img/dotted-bg-transp.png'), linear-gradient(0deg, rgba(200,200,200,0.4) 0%, rgba(0,0,0,.2) 50%, rgba(200,200,200,0.4) 100%);
      
 }
 
