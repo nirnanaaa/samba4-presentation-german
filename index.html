@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>samba4</title>
+    
+    <meta name="description" content="samba4 presentation" />
+    <meta name="author" content="Florian Kasper" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+	<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+	<script src="js/jquery.js"></script>
+	<script src="js/prefixfree.js"></script>
+    <script src="js/bootstrap/js/bootstrap.min.js"></script>
+	
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+
+<div id="impress">
+
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q style="text-align:center;margin-top:240px"><img src="img/samba_logo_4c.png" width="485" height="169"></q>
+    </div>
+	<div id="bores" class="step slide" data-x="-1000" data-y="-2200"  data-rotate="180">
+        <p style="text-align:center;">
+		
+		<dl>
+			<dt><h1>Gliederung</h1></dt>
+			<dd><dl>
+				<dt>Was ist Samba</dt>
+				
+				<dd>Prinzip</dd>
+				<dd>Geschichte</dd>
+				<dd>Was kann Samba</dd>
+				<dd>Unterstützung</dd>
+				
+				<dt>Was ist neu an Samba4</dt>
+				<dd>Windows</dd>
+				<dd>OS X</dd>
+				
+				<dt>Installation</dt>
+				<dd>Basics</dd>
+				<dd>Windows 7 Integration</dd>
+				
+				<dt>Administration</dt>
+				<dd>Windows Remote Server Administration Tools</dd>
+				<dd>Linux command line</dd>
+				
+				<!--<dt>Fragen</dt>-->
+			</dl></dd>
+		</dl>
+		</p>
+    </div>
+	<div id="what-is-samba-history" class="step slide" data-x="-1900" data-y="-2200"  data-rotate="180">
+        <dl>
+		<dt><h1>Was ist Samba</h1></dt>
+		<dd><dl>
+		<dt>Geschichte</dt>
+		<dd>1992 von Andrew Tridgell</dd><!--entwickelt um den datenaustausch zwischen DOS und SunOS zu ermöglichen-->
+		<dd>Portierung auf Linux</dd><!--Was samba eine enorme verbreitung im dateiserver markt bescherte, da linux kostenlos und für jedermann zugänglich-->
+		<dd>Dauerhafte Weiterentwicklung</dd><!--aktualität-->
+		<dd>2000 Abspaltung von Samba-TNG</dd><!--mit dem ziel mehr als nur einen dateiserver bereitzustellen (PDC)-->
+		<dd>20 Kernentwickler</dd><!--bei IBM/MS/APPLE-->
+		<dd>Momentane Version: 4.0.0rc6</dd>
+		</dl></dd>
+		</dl>
+    </div>
+	<div id="what-is-samba-whatcani" class="step slide" data-x="-2800" data-y="-2200"  data-rotate="180">
+        <dl>
+		<dt><h1>Was ist Samba</h1></dt>
+		<dd><dl>
+		<dt>Was kann Samba</dt>
+		<dd>Freigabe von Dateien / Druckern</dd>
+		<dd>Authentifizierung von Benutzern</dd>
+		<dd>WINS Server</dd>
+		<dd>Emulieren eines Active Directory domain controllers</dd>
+		<dd>Backup Server für Windows Active Directory</dd>
+		<dd>Mitglied einer Active Directory</dd>
+		</dl></dd>
+		</dl>
+    </div>	
+	<div id="what-is-samba-support" class="step slide" data-x="-3700" data-y="-2200"  data-rotate="180">
+        <dl>
+		<dt><h1>Was ist Samba</h1></dt>
+		<dd><dl>
+		<dt>Unterstützung</dt>
+		<dd>Windows (2000|XP|Vista|7|8)</dd>
+		<dd>BSD (FreeBSD|OpenBSD)</dd>
+		<dd>Linux (z.B. debian,SuSe,RetHat,Slackware,CentOS,...)</dd>
+		<dd>OS X</dd>
+		<dd>Novell Netware</dd>
+		<dd>Solaris</dd>
+		</dl></dd>
+		</dl>
+    </div>		
+	<div id="thanks-resources-literals" class="step slide" data-x="-1000" data-y="-10500"  data-rotate="180">
+        <dl>
+		<dt>Quellen</dt>
+			<dd>wikipedia.org</dd>
+			<dd>samba.org</dd>
+			<dd>github.com</dd>
+			<dd></dd>
+		<dt>Proudly powered by</dt>
+		<dd>Impress.js</dd>
+		<dd>Twitter bootstrap</dd>
+		<dd>Prefixfree</dd>
+		</dl>
+		
+    </div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+
+</body>
+</html>
+
