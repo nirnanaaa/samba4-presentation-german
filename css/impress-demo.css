@@ -46,7 +46,9 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-
+img.img{
+	margin-top:30px
+}
 dd{
 	line-height: 1.1;
 }
