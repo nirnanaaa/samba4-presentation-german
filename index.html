@@ -135,10 +135,91 @@
         <dl>
 		<dt><h1>Installation</h1></dt>
 		<dd><dl>
-		<dt>Samba4</dt>
+		<dt>Herunterladen</dt>
 		<dd><code><pre>
 $ git clone git://git.samba.org/samba.git samba-master
+
+Cloning into 'samba-master'...
+remote: Counting objects: 1105381, done.
+remote: Compressing objects:  88% (215505/244892)    eceiving objects:   0% (1/1
+remote: Compressing objects: 100% (244892/244892), done.
+Receiving objects: 100% (1105381/1105381), 215.44 MiB | 6.29 MiB/s, done.
+remote: Total 1105381 (delta 855035), reused 1105019 (delta 854764)
+Resolving deltas: 100% (855035/855035), done.
+Checking out files: 100% (7151/7151), done.
+
 $ cd samba-master
+		</pre></code></dd>
+		</dl></dd>
+		</dl>
+    </div>	
+	<div id="samba4-install-basic-3" class="step slide" data-x="-3700" data-y="-4000">
+        <dl>
+		<dt><h1>Installation</h1></dt>
+		<dd><dl>
+		<dt>Konfigurieren</dt>
+		<dd style="overflow: auto"><code><pre>
+$ ./configure --enable-debug --enable-selftest
+
+fkasper@yoda-sam:~/samba-master$ ./configure --enable-debug --enable-selftest
+Checking for program gcc or cc           : /usr/bin/gcc
+Checking for program cpp                 : /usr/bin/cpp
+Checking for program ar                  : /usr/bin/ar
+Checking for program ranlib              : /usr/bin/ranlib
+Checking for gcc                         : ok
+Checking for program git                 : /usr/bin/git
+Check for -MD                            : yes
+Checking for program gdb                 : /usr/bin/gdb
+Checking build system                    : Linux yoda-sam 3.2.0-35-generic #55-Ubuntu SMP Wed Dec 5 17:42:16 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux
+Checking for header sys/utsname.h        : yes
+Checking uname sysname type              : Linux
+Checking uname machine type              : x86_64
+Checking uname release type              : 3.2.0-35-generic
+Checking uname version type              : #55-Ubuntu SMP Wed Dec 5 17:42:16 UTC 2012
+Checking for header stdio.h              : yes
+Checking simple C program                : ok
+Checking for rpath library support       : ok
+Checking for -Wl,--version-script support  : ok
+Checking compiler accepts -fPIC            : yes
+Checking for inline                        : inline
+Checking for pkg-config version >= 0.0.0   : yes
+Checking for header sys/types.h            : yes
+Checking for header sys/stat.h             : yes
+Checking for header stdlib.h               : yes
+Checking for header stddef.h               : yes
+Checking for header memory.h               : yes
+Checking for header string.h               : yes
+Checking for header strings.h              : yes
+Checking for header inttypes.h             : yes
+Checking for header stdint.h               : yes
+Checking for header unistd.h               : yes
+Checking for header minix/config.h         : no
+Checking for header ctype.h                : yes
+Checking for header standards.h            : no
+Checking for header stdbool.h              : yes
+Checking for header stdarg.h               : yes
+Checking for header vararg.h               : no
+Checking for header limits.h               : yes
+Checking for header assert.h               : yes
+Checking getconf LFS_CFLAGS                : not found
+Checking getconf large file support flags work : ok
+Checking for large file support without additional flags : ok
+Checking for header sys/time.h                           : yes
+Checking for header time.h                               : yes
+Checking for WORDS_BIGENDIAN                             : not found
+Checking for header signal.h                             : yes
+Checking if signal handlers return int                   : not found
+Checking for variable __FUNCTION__                       : ok
+Checking for va_copy                                     : ok
+Checking for HAVE__VA_ARGS__MACRO                        : ok
+Checking compiler accepts ['']                           : yes
+Checking compiler accepts ['-Wstack-protector']          : yes
+Checking compiler accepts ['-Werror']                    : yes
+Checking for header linux/types.h                        : yes
+Checking for header crypt.h                              : yes
+Checking for header locale.h                             : yes
+
+
 		</pre></code></dd>
 		</dl></dd>
 		</dl>
