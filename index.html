@@ -158,7 +158,7 @@ $ cd samba-master
 		<dt><h1>Installation</h1></dt>
 		<dd><dl>
 		<dt>Konfigurieren</dt>
-		<dd style="overflow: auto;height:300px"><code><pre>
+		<dd style="overflow: auto;height:300px"><pre>
 $ ./configure --enable-debug --enable-selftest
 
 fkasper@yoda-sam:~/samba-master$ ./configure --enable-debug --enable-selftest
@@ -220,7 +220,7 @@ Checking for header crypt.h                              : yes
 Checking for header locale.h                             : yes
 
 
-		</pre></code></dd>
+		</pre></dd>
 		</dl></dd>
 		</dl>
     </div>	
@@ -228,8 +228,8 @@ Checking for header locale.h                             : yes
         <dl>
 		<dt><h1>Installation</h1></dt>
 		<dd><dl>
-		<dt>Herunterladen</dt>
-		<dd><code><pre>
+		<dt>Bauen</dt>
+		<dd><pre>
 $ make
 
 fkasper@yoda-sam:~/samba-master$ make > ../output 1>&2
@@ -244,10 +244,83 @@ Waf: Entering directory `/home/fkasper/samba-master/bin'
 Waf: Leaving directory `/home/fkasper/samba-master/bin'
 'build' finished successfully (4067s)
 
-		</pre></code></dd>
+		</pre></dd>
 		</dl></dd>
 		</dl>
     </div>	
+<div id="samba4-install-basic-5" class="step slide" data-x="-5500" data-y="-4000">
+        <dl>
+		<dt><h1>Installation</h1></dt>
+		<dd><dl>
+		<dt>Installieren</dt>
+		<dd><pre>
+# make install
+
+fkasper@yoda-sam:~/samba-master$ make install
+WAF_MAKE=1 python ./buildtools/bin/waf install
+Waf: Entering directory `/home/fkasper/samba-master/bin'
+* creating /usr/local/samba/etc
+* creating /usr/local/samba/private
+* creating /usr/local/samba/var
+* creating /usr/local/samba/private
+* creating /usr/local/samba/var/lib
+* creating /usr/local/samba/var/locks
+* creating /usr/local/samba/var/cache
+* creating /usr/local/samba/var/lock
+* creating /usr/local/samba/var/run
+* creating /usr/local/samba/var/run
+.
+.
+.
+* installing bin/default/pidl/Parse::Pidl::Wireshark::NDR.3pm as /usr/local/samba/share/man/man3/Parse::Pidl::Wireshark::NDR.3pm
+Waf: Leaving directory `/home/fkasper/samba-master/bin'
+'install' finished successfully (53.157s)
+		</pre></dd>
+		</dl></dd>
+		</dl>
+    </div>	
+<div id="samba4-install-basic-6" class="step slide" data-x="-6400" data-y="-4000">
+        <dl>
+		<dt><h1>Installation</h1></dt>
+		<dd><dl>
+		<dt>Konfigurieren</dt>
+		<dd><pre>
+# /usr/local/samba/bin/samba-tool domain provision
+
+Realm: test.au
+Domain [test]:
+Server Role (dc, member, standalone) [dc]:
+DNS backend (SAMBA_INTERNAL, BIND9_FLATFILE, BIND9_DLZ, NONE) [SAMBA_INTERNAL]:
+DNS forwarder IP address (write 'none' to disable forwarding) [192.168.1.xxx]:
+Administrator password:
+Retype password:
+.
+.
+.
+A Kerberos configuration suitable for Samba 4 has been generated at /usr/local/samba/private/krb5.conf
+Once the above files are installed, your Samba4 server will be ready to use
+Server Role:           active directory domain controller
+Hostname:              yourhostname
+NetBIOS Domain:        TEST
+DNS Domain:            test.au
+  DOMAIN SID:            S-1-5-21-398212174-3221402144-1301104618
+
+		</pre></dd>
+		</dl></dd>
+		</dl>
+    </div>
+<div id="samba4-install-basic-6" class="step slide" data-x="-6400" data-y="-4000">
+        <dl>
+		<dt><h1>Installation</h1></dt>
+		<dd><dl>
+		<dt>Starten</dt>
+		<dd><pre>
+# /usr/local/samba/sbin/samba
+
+		</pre></dd>
+		</dl></dd>
+		</dl>
+    </div>		
 	<div id="thanks-resources-literals" class="step slide" data-x="-1000" data-y="-10500"  data-rotate="180">
         <dl>
 		<dt>Quellen</dt>
