@@ -29,7 +29,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-a, abbr, acronym, address, big, cite, code,
+a, abbr, acronym, address, big, cite,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, center,
 ol, ul, li,
@@ -45,6 +45,9 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+}
+code{
+	margin-top: 20px;
 }
 dd{
 	line-height: 1.1;
