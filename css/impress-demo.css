@@ -83,7 +83,6 @@ table {
     want to leave anybody behind.
 */
 body {
-    font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 	background-image: url('../img/dotted-bg-transp.png');
 	background-image: linear-gradient(0deg,rgba(255,255,255,0.7) 0%, rgba(0,0,0,.2) 50%, rgba(255,255,255,0.7) 100%), url('../img/dotted-bg-transp.png');
