@@ -88,7 +88,7 @@
 		<dd>Emulieren eines Active Directory domain controllers</dd>
 		<dd>Backup Server für Windows Active Directory</dd>
 		<dd>Mitglied einer Active Directory domain</dd>
-		
+		<dd>S.M.A.R.T. Card login</dd>
 		</dl>
     </div>	
 	<div id="what-is-samba-history" class="step slide" data-x="-3700" data-y="-2200"  data-rotate="180">
@@ -358,12 +358,36 @@ DNS Domain:            test.au
 		</dl></dd>
 		</dl>
     </div>	
+    <div id="samba4-install-basic-7" class="step slide" data-x="-8200" data-y="-4000">
+        <dl>
+		<dt><h1>Installation</h1></dt>
+		<dd><dl>
+		<dt>Anmelden</dt>
+		<dd><img src="img/samba4_login_window.jpg" class="img-polaroid"/></dd>
+		</dl></dd>
+		</dl>
+    </div>	
+	<div id="samba4-install-basic-8" class="step slide" data-x="-9100" data-y="-4000">
+        <dl>
+		<dt><h1>Installation</h1></dt>
+		<dd><dl>
+		<dt>Optional</dt>
+		<dd>ntpd (Zeitserver) <code>apt-get install ntpd</code></dd>
+		<dd>openldap (Datenbank) <code>apt-get install slapd</code></dd>
+		<dd>bind9 (Namensauflösung) <code>apt-get install bind9</code></dd>
+		<dd>avahi (Vernetzung ohne Konfiguration) <code>apt-get install avahi</code></dd>
+		<dd>cups  (Druckserver) <code>apt-get install cups</code></dd>
+		</dl></dd>
+		</dl>
+    </div>		
+	
+	
 	<div id="samba4-managing-wrat" class="step slide" data-x="-7300" data-y="-4900"   data-rotate="180">
 	    <dl>
 		<dt><h1>Verwaltung</h1></dt>
 		<dd><dl>
 		<dt>Remote Server Administration Tools</dt>
-		<dd><img src="img/dsa.msc.png"  width="485" height="169" class="img-polaroid"/></dd>
+		<dd><img src="img/da_new.msc.jpg" class="img-polaroid"/></dd>
 		</dl></dd>
 		</dl>
 	</div>
@@ -372,7 +396,7 @@ DNS Domain:            test.au
 		<dt><h1>Verwaltung</h1></dt>
 		<dd><dl>
 		<dt>Linux command line</dt>
-		<dd><pre>fkasper@yoda-sam:~/samba-master$ sudo /usr/local/samba/bin/net newuser demo2 p@ssw0rd</pre></dd>
+		<dd><pre># /usr/local/samba/bin/samba-tool user add USERNAME</pre></dd>
 		</dl></dd>
 		</dl>
 	</div>
