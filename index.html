@@ -143,7 +143,7 @@ Cloning into 'samba-master'...
 remote: Counting objects: 1105381, done.
 remote: Compressing objects:  88% (215505/244892)    eceiving objects:   0% (1/1
 remote: Compressing objects: 100% (244892/244892), done.
-Receiving objects: 100% (1105381/1105381), 215.44 MiB | 6.29 MiB/s, done.
+Receiving objects: 100% (1105381/1105381), 215.44 MiB | 19.29 MiB/s, done.
 remote: Total 1105381 (delta 855035), reused 1105019 (delta 854764)
 Resolving deltas: 100% (855035/855035), done.
 Checking out files: 100% (7151/7151), done.
@@ -219,6 +219,30 @@ Checking for header linux/types.h                        : yes
 Checking for header crypt.h                              : yes
 Checking for header locale.h                             : yes
 
+
+		</pre></code></dd>
+		</dl></dd>
+		</dl>
+    </div>	
+<div id="samba4-install-basic-4" class="step slide" data-x="-4600" data-y="-4000">
+        <dl>
+		<dt><h1>Installation</h1></dt>
+		<dd><dl>
+		<dt>Herunterladen</dt>
+		<dd><code><pre>
+$ make
+
+fkasper@yoda-sam:~/samba-master$ make > ../output 1>&2
+WAF_MAKE=1 python ./buildtools/bin/waf build
+Waf: Entering directory `/home/fkasper/samba-master/bin'
+        Selected embedded Heimdal build
+[ 132/3816] Generating VERSION
+[ 167/3816] Generating smbd/build_options.c
+.
+.
+.
+Waf: Leaving directory `/home/fkasper/samba-master/bin'
+'build' finished successfully (4067s)
 
 		</pre></code></dd>
 		</dl></dd>
