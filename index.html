@@ -10,10 +10,9 @@
     <meta name="description" content="samba4 presentation" />
     <meta name="author" content="Florian Kasper" />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-
-	<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="js/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="css/impress-demo.css" rel="stylesheet" />
+	<link href="css/font-awesome.css" rel="stylesheet" />
 	<script src="js/jquery.js"></script>
 	<script src="js/prefixfree.js"></script>
     <script src="js/bootstrap/js/bootstrap.min.js"></script>
@@ -179,14 +178,16 @@
     </div>
 <!--NEU-->
 	<div id="wns4" class="step slide" data-x="-5500" data-y="-3100">
-		<div style="text-align:center;font-size:72px;font-weight:bolder;margin-top:270px">Was ist neu <b> Samba4 </b></div>
+		<div style="text-align:center;"><i class=" icon-angle-down icon-10x"></i></div>
+		<div style="text-align:center;font-size:72px;font-weight:bolder;">Was ist neu</div>
+		<div style="text-align:center;"><i class=" icon-angle-up icon-10x"></i></div>
 	</div>	
 	<div id="what-is-samba-new" class="step slide" data-x="-4600" data-y="-3100">
         <dl>
 			<dt>
-				<h1>Was ist neu an Samba4</h1>
+				<h1><i class="icon-angle-right"></i> Was ist neu an Samba4</h1>
 			</dt>
-			<dt>Windows</dt>
+			<dt><i class="icon-double-angle-right"></i> Windows</dt>
 			<dd>
 				<dl>
 					<ul>
@@ -201,12 +202,14 @@
     </div>
 <!--VOR/NACHTEILE-->
 	<div id="pos/neg" class="step slide" data-x="2300" data-y="-4000" data-rotate="90">
-		<div style="text-align:center;font-size:72px;font-weight:bolder;margin-top:270px">Vor- und Nachteile</div>
+		<div style="text-align:center;"><i class=" icon-angle-down icon-10x"></i></div>
+		<div style="text-align:center;font-size:72px;font-weight:bolder;">Vor- und Nachteile</div>
+		<div style="text-align:center;"><i class=" icon-angle-up icon-10x"></i></div>
 	</div>	
 	<div id="positives" class="step slide" data-x="1600" data-y="-4000"  data-rotate="90">
         <dl>
 			<dt>
-				<h1>Vorteile</h1>
+				<h1><i class="icon-angle-right"></i> Vorteile</h1>
 			</dt>
 			<dd>
 				<ul>
@@ -224,7 +227,7 @@
 	<div id="negatives" class="step slide" data-x="900" data-y="-4000"  data-rotate="90">
         <dl>
 			<dt>
-				<h1>Nachteile</h1>
+				<h1><i class="icon-angle-right"></i> Nachteile</h1>
 			</dt>
 			<dd>
 				<ul>
@@ -236,14 +239,16 @@
     </div>	
 <!--INSTALL-->	
 	<div id="samba4-install-basic-0" class="step slide" data-x="-1000" data-y="-4000">
-		<div style="text-align:center;font-size:72px;font-weight:bolder;margin-top:270px">Samba installieren</div>
+		<div style="text-align:center;"><i class=" icon-angle-down icon-10x"></i></div>
+		<div style="text-align:center;font-size:72px;font-weight:bolder;">Samba installieren</div>
+		<div style="text-align:center;"><i class=" icon-angle-up icon-10x"></i></div>
 	</div>	
 	
 	<div id="samba4-install-basic-1" class="step slide" data-x="-1900" data-y="-4000">
         <dl>
-		<dt><h1>Installation</h1></dt>
+		<dt><h1><i class="icon-angle-right"></i> Installation</h1></dt>
 		<dd><dl>
-		<dt>Vorraussetzungen</dt>
+		<dt><i class="icon-double-angle-right"></i> Vorraussetzungen</dt>
 		<dd><pre>
 # apt-get install build-essential libacl1-dev libattr1-dev \
   libblkid-dev libgnutls-dev libreadline-dev python-dev \
@@ -255,9 +260,9 @@
     </div>	
 	<div id="samba4-install-basic-2" class="step slide" data-x="-2800" data-y="-4000">
         <dl>
-		<dt><h1>Installation</h1></dt>
+		<dt><h1><i class="icon-angle-right"></i> Installation</h1></dt>
 		<dd><dl>
-		<dt>Herunterladen</dt>
+		<dt><i class="icon-double-angle-right"></i> Herunterladen</dt>
 		<dd><pre>
 $ git clone git://git.samba.org/samba.git samba-master
 
@@ -277,9 +282,9 @@ $ cd samba-master
     </div>	
 	<div id="samba4-install-basic-3" class="step slide" data-x="-3700" data-y="-4000">
         <dl>
-		<dt><h1>Installation</h1></dt>
+		<dt><h1><i class="icon-angle-right"></i> Installation</h1></dt>
 		<dd><dl>
-		<dt>Konfigurieren</dt>
+		<dt><i class="icon-double-angle-right"></i> Konfigurieren</dt>
 		<dd style="overflow: auto;height:300px"><pre>
 $ ./configure --enable-debug --enable-selftest
 
@@ -348,9 +353,9 @@ Checking for header locale.h                             : yes
     </div>	
 <div id="samba4-install-basic-4" class="step slide" data-x="-4600" data-y="-4000">
         <dl>
-		<dt><h1>Installation</h1></dt>
+		<dt><h1><i class="icon-angle-right"></i> Installation</h1></dt>
 		<dd><dl>
-		<dt>Bauen</dt>
+		<dt><i class="icon-double-angle-right"></i> Bauen</dt>
 		<dd><pre>
 $ make
 
@@ -372,9 +377,9 @@ Waf: Leaving directory `/home/fkasper/samba-master/bin'
     </div>	
 <div id="samba4-install-basic-5" class="step slide" data-x="-5500" data-y="-4000">
         <dl>
-		<dt><h1>Installation</h1></dt>
+		<dt><h1><i class="icon-angle-right"></i> Installation</h1></dt>
 		<dd><dl>
-		<dt>Installieren</dt>
+		<dt><i class="icon-double-angle-right"></i> Installieren</dt>
 		<dd><pre>
 # make install
 
@@ -403,9 +408,9 @@ Waf: Leaving directory `/home/fkasper/samba-master/bin'
     </div>	
 <div id="samba4-install-basic-6" class="step slide" data-x="-6400" data-y="-4000">
         <dl>
-		<dt><h1>Installation</h1></dt>
+		<dt><h1><i class="icon-angle-right"></i> Installation</h1></dt>
 		<dd><dl>
-		<dt>Konfigurieren</dt>
+		<dt><i class="icon-double-angle-right"></i> Konfigurieren</dt>
 		<dd><pre>
 # /usr/local/samba/bin/samba-tool domain provision
 
@@ -433,9 +438,9 @@ DNS Domain:            test.au
     </div>
 	<div id="samba4-install-basic-7" class="step slide" data-x="-7300" data-y="-4000">
         <dl>
-		<dt><h1>Installation</h1></dt>
+		<dt><h1><i class="icon-angle-right"></i> Installation</h1></dt>
 		<dd><dl>
-		<dt>Starten</dt>
+		<dt><i class="icon-double-angle-right"></i> Starten</dt>
 		<dd><pre>
 # /usr/local/samba/sbin/samba
 		</pre></dd>
@@ -445,9 +450,9 @@ DNS Domain:            test.au
 
 	<div id="samba4-install-basic-8" class="step slide" data-x="-8200" data-y="-4000">
         <dl>
-		<dt><h1>Installation</h1></dt>
+		<dt><h1><i class="icon-angle-right"></i> Installation</h1></dt>
 		<dd><dl>
-		<dt>Optional</dt>
+		<dt><i class="icon-double-angle-right"></i> Optional</dt>
 		<dd>
 		<table class="table">
 		<tr><td>ntpd (Zeitserver) </td><td><code>apt-get install ntpd</code></td></tr>
@@ -461,16 +466,18 @@ DNS Domain:            test.au
 		</dl>
     </div>	
 	<div id="samba4-embed-windows-open" class="step slide" data-x="-9100" data-y="-4000">
-		<div style="text-align:center;font-size:72px;font-weight:bolder;margin-top:270px">Windows einbinden</div>
+		<div style="text-align:center;"><i class=" icon-angle-down icon-10x"></i></div>
+		<div style="text-align:center;font-size:72px;font-weight:bolder;">Windows einbinden</div>
+		<div style="text-align:center;"><i class=" icon-angle-up icon-10x"></i></div>	
 	</div>	
 	<div id="samba4-bind-basic-1" class="step slide" data-x="-10000" data-y="-4000">
         <dl>
 			<dt>
-				<h1>Installation</h1>
+				<h1><i class="icon-angle-right"></i> Installation</h1>
 			</dt>
 			<dd>
 				<dl>
-					<dt>Windows einbinden</dt>
+					<dt><i class="icon-double-angle-right"></i> Windows einbinden</dt>
 					<dd>
 						<dl>
 							<dt>DNS Einstellungen</dt>
@@ -483,14 +490,18 @@ DNS Domain:            test.au
 			</dd>	
 		</dl>
     </div>	
+	<div id="samba4-bind-basic-12" class="step slide" data-x="-10000" data-y="-4000">
+        <div style="text-align:center"><i class="icon-success icon-check icon-20x green halfop"></i></div>
+    </div>	
+	
 	<div id="samba4-bind-basic-2" class="step slide" data-x="-10900" data-y="-4000">
         <dl>
 			<dt>
-				<h1>Installation</h1>
+				<h1><i class="icon-angle-right"></i> Installation</h1>
 			</dt>
 			<dd>
 				<dl>
-					<dt>Windows einbinden</dt>
+					<dt><i class="icon-double-angle-right"></i> Windows einbinden</dt>
 					<dd>
 						<dl>
 							<dt>Zeit Einstellungen</dt>
@@ -503,14 +514,18 @@ DNS Domain:            test.au
 			</dd>	
 		</dl>
     </div>	
+	<div id="samba4-bind-basic-22" class="step slide" data-x="-10900" data-y="-4000">
+        <div style="text-align:center"><i class="icon-success icon-check icon-20x green halfop"></i></div>
+    </div>	
+	
 	<div id="samba4-bind-basic-3" class="step slide" data-x="-11800" data-y="-4000">
         <dl>
 			<dt>
-				<h1>Installation</h1>
+				<h1><i class="icon-angle-right"></i> Installation</h1>
 			</dt>
 			<dd>
 				<dl>
-					<dt>Windows einbinden</dt>
+					<dt><i class="icon-double-angle-right"></i> Windows einbinden</dt>
 					<dd>
 						<dl>
 							<dt>Beitritt der Domäne</dt>
@@ -523,15 +538,18 @@ DNS Domain:            test.au
 			</dd>	
 		</dl>
     </div>	
-	
+	<div id="samba4-bind-basic-32" class="step slide" data-x="-11800" data-y="-4000">
+        <div style="text-align:center"><i class="icon-success icon-check icon-20x green halfop"></i></div>
+    </div>	
+		
 	<div id="samba4-bind-basic-4" class="step slide" data-x="-12700" data-y="-4000">
         <dl>
 			<dt>
-				<h1>Installation</h1>
+				<h1><i class="icon-angle-right"></i> Installation</h1>
 			</dt>
 			<dd>
 				<dl>
-					<dt>Windows einbinden</dt>
+					<dt><i class="icon-double-angle-right"></i> Windows einbinden</dt>
 					<dd>
 						<dl>
 							<dt>Anmelden</dt>
@@ -543,22 +561,25 @@ DNS Domain:            test.au
 				</dl>
 			</dd>	
 		</dl>
+	</div>
+	<div id="samba4-bind-basic-43" class="step slide" data-x="-12700" data-y="-4000">
+        <div style="text-align:center"><i class="icon-success icon-check icon-20x green halfop"></i></div>
     </div>	
 	
 	<div id="samba4-managing-wrat" class="step slide" data-x="-7300" data-y="-4900"   data-rotate="180">
 	    <dl>
-		<dt><h1>Verwaltung</h1></dt>
+		<dt><h1><i class="icon-angle-right"></i> Verwaltung</h1></dt>
 		<dd><dl>
-		<dt>Remote Server Administration Tools</dt>
+		<dt><i class="icon-double-angle-right"></i> Remote Server Administration Tools</dt>
 		<dd><img class="img" src="img/da_new.msc.jpg"/></dd>
 		</dl></dd>
 		</dl>
 	</div>
 	<div id="samba4-managing-linux" class="step slide" data-x="-8200" data-y="-4900"   data-rotate="180">
 	    <dl>
-		<dt><h1>Verwaltung</h1></dt>
+		<dt><h1><i class="icon-angle-right"></i>Verwaltung</h1></dt>
 		<dd><dl>
-		<dt>Linux command line</dt>
+		<dt><i class="icon-double-angle-right"></i> Linux command line</dt>
 		<dd><pre># /usr/local/samba/bin/samba-tool user add USERNAME</pre></dd>
 		</dl></dd>
 		</dl>

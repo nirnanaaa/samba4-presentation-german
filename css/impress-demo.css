@@ -28,22 +28,6 @@
     doesn't do any harm and gives us a fresh start.
 */
 
-html, body, div, span, applet, object, iframe,
-a, abbr, acronym, address, big, cite,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, center,
-fieldset, form, label, legend,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
 img.img{
 	margin-top:30px
 }
@@ -128,7 +112,15 @@ a:focus {
     
     And then we hide the message, when support is detected in the browser.
 */
-
+.green{
+	color: #5bb75b;
+}
+.halfop{
+	opacity: .4
+}
+i{
+background: none !important;
+}
 .fallback-message {
     font-family: sans-serif;
     line-height: 1.3;
@@ -168,7 +160,6 @@ a:focus {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 	background: linear-gradient(45deg, transparent 0%, rgba(35,35,35,0.3) 50%, transparent 100%);
-    font-family: 'PT Serif', georgia, serif;
     font-size: 48px;
     line-height: 1.5;
 }
