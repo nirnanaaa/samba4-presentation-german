@@ -31,6 +31,21 @@
 img.img{
 	margin-top:30px
 }
+.none{
+	display: none;
+}
+#position{
+
+	position:absolute;
+	right: 20px;
+	top: 10px;
+	left: auto;
+	bottom: auto;
+	font-size: 50px;
+}
+#position i{
+	float:right;
+}
 dd{
 	line-height: 1.1;
 }
